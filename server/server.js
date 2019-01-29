@@ -6,14 +6,13 @@ const bodyParser = require('body-parser')
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-/*
-FUNCION DE PRUEBA
+
 
 app.get('/', function(req, res) {
     // res.send('Hello World')  Esto envia un html
     res.json('Hello World'); //Esto envia un JSON como respuesta a la peticion REST
 });
-*/
+
 
 app.get('/usuario', (req, res) => {
     res.json('get Usuario');
